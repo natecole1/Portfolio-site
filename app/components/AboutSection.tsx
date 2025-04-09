@@ -15,8 +15,8 @@ const AboutSection = () => {
             things. I enjoy discovering new technologies to see what I can build
             with them. Over the past few years, I&apos;ve been immersed in the
             JavaScript universe: working in React and taking advantage of
-            Next.js's optimization features. Let's work together to create a
-            captivating digital experience.
+            Next.js&apos;s optimization features. Let&apos;s work together to
+            create a captivating digital experience.
           </p>
         </div>
         <div className="w-full lg:w-[50%] mb-10 flex justify-center items-center">
