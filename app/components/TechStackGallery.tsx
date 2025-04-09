@@ -10,11 +10,6 @@ import { gsap } from 'gsap';
 const TechStackGallery = () => {
     const movingContainerRef = useRef(null);
 
-    const doubledIconsArray = [
-      ...techStackIcons,
-      
-    ];
-
     useGSAP(() => {
         const infiniteTimeline = () => {
             

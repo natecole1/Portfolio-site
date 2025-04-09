@@ -11,11 +11,12 @@ const AboutSection = () => {
         <div className="w-full h-[550px] lg:w-[50%] flex justify-center items-center p-10">
           <p className="text-white xl:text-2xl">
             {" "}
-            A dynamic problem-solver with a passion for building cool things. I
-            enjoy discovering new technologies to see what I can build with
-            them. Over the past few years, I've been immersed in the
+            An innovative problem-solver with a passion for building cool
+            things. I enjoy discovering new technologies to see what I can build
+            with them. Over the past few years, I&apos;ve been immersed in the
             JavaScript universe: working in React and taking advantage of
-            Next.js's optimization features. Let's work together to create a captivating digital experience.
+            Next.js's optimization features. Let's work together to create a
+            captivating digital experience.
           </p>
         </div>
         <div className="w-full lg:w-[50%] mb-10 flex justify-center items-center">

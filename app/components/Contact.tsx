@@ -6,10 +6,11 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 
 import { Button } from "@/_components/ui/button";
+import { Loader } from 'lucide-react';
+
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -81,7 +82,7 @@ const Contact = () => {
           <h1 className=" ">Contact</h1>
         </div>
         <div className="w-full flex items-center justify-center my-10 xl:my-20">
-          <h1 className="text-white text-[20px]">Let's Connect</h1>
+          <h1 className="text-white text-[20px]">Let&apos;s Connect</h1>
         </div>
       </div>
       <div className="m-auto w-[80%] md:w-[60%] 2xl:w-[50%]">
@@ -144,9 +145,9 @@ const Contact = () => {
             <div className="w-full flex justify-center">
               <Button
                 type="submit"
-                className="w-full h-10 xl:h-14 sm:w-[80%] xl:w-[60%] bg-blue-500 cursor-pointer"
+                className="w-full h-10 xl:h-14 sm:w-[80%] xl:w-[60%] bg-blue-500 cursor-pointer text-white"
               >
-                Submit
+                {isSubmitting ? <Loader /> : "Submit"}
               </Button>
             </div>
           </form>
