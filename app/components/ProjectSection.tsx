@@ -14,7 +14,7 @@ const ProjectSection = () => {
         <ProjectCard 
           imageUrl={"/assets/podcastingApp.png"} 
           projectTitle={"PODCASTING"} 
-          projectWebLink='https:podcastingai.vercel.app'
+          projectWebLink='https://podcastingai.vercel.app'
         />
       </div>
     </div>
