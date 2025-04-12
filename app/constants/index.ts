@@ -13,7 +13,7 @@ export const NavLinks = [
 
 export const techStackIcons = [
     {
-        imageUrl: "/assets/javascript.png"
+        imageUrl: "/assets/javaScript.png"
     },
     {
         imageUrl: "/assets/CSS3.png"

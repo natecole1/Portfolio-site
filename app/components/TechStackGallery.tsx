@@ -8,27 +8,7 @@ import { gsap } from 'gsap';
 
 
 const TechStackGallery = () => {
-    const movingContainerRef = useRef(null);
-
-    useGSAP(() => {
-        const infiniteTimeline = () => {
-            
-
-            gsap.set(movingContainerRef.current, {
-                xPercent: 100
-            })
-            gsap.timeline({
-                defaults: { ease: 'none', repeat: -1}
-            })
-            .to(movingContainerRef.current, {
-                xPercent: -100,
-                duration: 10,
-            })
-            .set(movingContainerRef, {x:0})
-        }
-        infiniteTimeline();
-    })
-
+    
 
 
   return (
