@@ -7,14 +7,13 @@ import ProjectSection from "./components/ProjectSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import TechStackGallery from "./components/TechStackGallery";
-import Nav from "./components/Nav";
+
 
 export default function Home() {
   return (
     <>
       <div className="relative">
         <VideoBackground />  
-
         <Hero/>
       </div>
       <div>

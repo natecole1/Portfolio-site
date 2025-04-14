@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef } from 'react'
+import React from 'react'
 import { italianno } from '../fonts'
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
