@@ -20,7 +20,7 @@ const ProjectCard = ({imageUrl, projectTitle, projectWebLink}: ProjectCardProps)
             height={500}
             className="object-cover object-center w-full h-full rounded-xl "
           />
-          <div className="w-full h-full flex flex-col items-center justify-center absolute inset-o bg-black/[0.8] opacity-0 hover:opacity-100 cursor-pointer rounded-xl">
+          <div className="w-full h-full flex flex-col items-center justify-center absolute inset-o bg-black/[0.8] opacity-0 hover:opacity-100 transition-all duration-400 cursor-pointer rounded-xl">
             <h2 className="text-yellow-400 text-3xl font-bold">
               {projectTitle}
             </h2>
