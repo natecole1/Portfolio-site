@@ -26,13 +26,13 @@ const Hero = () => {
       })
       .to(".letter", {
         opacity: 1,
-        stagger: 0.2,
-        duration: 0.2,
+        stagger: 0.05,
+       
       })
       .to(".letter2", {
         opacity: 1,
-        stagger: 0.2,
-        duration: 0.2,
+        stagger: 0.05,
+        
       });
       
   })
