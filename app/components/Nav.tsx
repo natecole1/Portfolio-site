@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { RiMenu3Fill } from 'react-icons/ri'
-import { NavLinks } from '../constants'
+import { navLinks } from '../constants'
 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -36,7 +36,7 @@ const Nav = () => {
         </div>
         <div className='hidden md:flex items-center justify-center gap-5 text-white'>
           {
-            NavLinks.map((navLink) => {
+            navLinks.map((navLink) => {
               return (
                 <div
                   key={navLink.label}

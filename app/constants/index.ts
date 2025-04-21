@@ -1,4 +1,4 @@
-export const NavLinks = [
+export const navLinks = [
     {
         label: "About"
     },
@@ -46,3 +46,16 @@ export const techStackIcons = [
         imageUrl: "/assets/TypeScript.png"
     },
 ]
+
+export const projects = [
+  {
+    imageUrl: "/assets/podcastingApp.png",
+    projectTitle: "PODCASTING",
+    projectWebLink: "https://podcastingai.vercel.app",
+  },
+  {
+    imageUrl: "/assets/cambridgeIvyInn.png",
+    projectTitle: "Cambridge Ivy Inn",
+    projectWebLink: "https://cambridge-ivy-inn.vercel.app",
+  },
+];

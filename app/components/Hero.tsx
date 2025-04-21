@@ -8,7 +8,7 @@ const Hero = () => {
   gsap.registerPlugin(useGSAP);
   const firstText = "FRONT-END";
   const firstTextSplit = firstText.split('')
-  console.log(firstTextSplit)
+  
   const secondText = "ENGINEER";
   const secondTextSplit = secondText.split('');
 
