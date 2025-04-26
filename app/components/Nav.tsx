@@ -6,6 +6,7 @@ import { navLinks } from '../constants'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useRef } from 'react';
+import { Link } from 'react-scroll';
 
 const Nav = () => {
   gsap.registerPlugin(useGSAP);
@@ -16,13 +17,13 @@ const Nav = () => {
     gsap.fromTo(containerRef.current, 
       {
         opacity:0,
-        y:-100,
+        y:-50,
       },
       
       {
       opacity:1,
       y:0,
-      duration:1.5,
+      duration:1,
       ease:'back.in'
     })
   })
@@ -38,12 +39,15 @@ const Nav = () => {
           {
             navLinks.map((navLink) => {
               return (
-                <div
+                <Link
+                  to={navLink.label.toLowerCase()}
+                  duration={700}
+                  smooth={true}
                   key={navLink.label}
                   className="text-[25px] md:text-[35px] cursor-pointer"
                 >
                   <h2>{navLink.label}</h2>
-                </div>
+                </Link>
               );
             })
           }

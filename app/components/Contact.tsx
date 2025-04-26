@@ -76,7 +76,7 @@ const Contact = () => {
     }
 
   return (
-    <div className="w-full bg-black p-4">
+    <div id="contact" className="w-full bg-black p-4">
       <div>
         <div className="w-30 md:w-40 flex items-center justify-center p-4 border-2 rounded-full text-white">
           <h1 className=" ">Contact</h1>

@@ -1,15 +1,22 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
+import gsap from 'gsap';
+import SplitType from 'split-type'
+import { useGSAP } from '@gsap/react';
 
 const AboutSection = () => {
+  // const mySplitText = SplitType.create('.quote')
+  // console.log(mySplitText);
+
   return (
-    <div className="w-full flex flex-col bg-black p-4 xl:py-20">
+    <div id="about" className="w-full flex flex-col bg-black p-4 xl:py-20">
       <div className="w-30 md:w-40 flex items-center justify-center p-4 border-2 rounded-full text-white">
-        <h1 className=" ">About Me</h1>
+        <h1 className=" quote2">About Me</h1>
       </div>
       <div className="flex flex-col lg:flex-row">
-        <div className="w-full h-[550px] lg:w-[50%] flex justify-center items-center p-10">
-          <p className="text-white xl:text-2xl">
+        <div className=" w-full h-[550px] lg:w-[50%] flex justify-center items-center p-10">
+          <p className="quote text-white xl:text-2xl">
             {" "}
             An innovative problem-solver with a passion for building cool
             things. I enjoy discovering new technologies to see what I can build
