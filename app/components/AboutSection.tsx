@@ -3,16 +3,16 @@ import React, {useEffect} from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import { useGSAP } from '@gsap/react';
+
 import  SplitType  from 'split-type'
 
 
 const AboutSection = () => {
   gsap.registerPlugin(ScrollTrigger)
-  let text: SplitType;
+  
 
   useEffect(() => {
-     text = new SplitType("#quote");
+   const text = new SplitType("#quote");
     console.log(text);
 
     const t1 = gsap.timeline();
