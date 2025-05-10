@@ -10,7 +10,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({imageUrl, projectTitle, projectWebLink}: ProjectCardProps) => {
   return (
-    <div className="w-[300px] h-[500px] md:w-[500px] xl:w-[700px] m-auto rounded-lg">
+    <div className="w-[300px] h-[500px] md:w-[400px] md:h-[400px] xl:w-[600px] xl:h-[600px] m-auto rounded-lg">
       <Link href={projectWebLink}>
         <div className="w-full h-full flex flex-col justify-center items-center relative ">
           <Image

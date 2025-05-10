@@ -76,7 +76,7 @@ const Contact = () => {
     }
 
   return (
-    <div id="contact" className="w-full bg-black p-4">
+    <div id="contact" className="w-full bg-[#09090b]/[0.9] p-4">
       <div>
         <div className="w-30 md:w-40 flex items-center justify-center p-4 border-2 rounded-full text-white">
           <h1 className=" ">Contact</h1>
@@ -98,7 +98,7 @@ const Contact = () => {
                     <Input
                       placeholder="Enter your name"
                       {...field}
-                      className="h-10 md:h-14 xl:h-16 bg-stone-100"
+                      className="h-10 md:h-14 xl:h-16 bg-stone-100 rounded-full"
                     />
                   </FormControl>
 
@@ -116,7 +116,7 @@ const Contact = () => {
                     <Input
                       placeholder="Enter your email"
                       {...field}
-                      className="h-10 md:h-14 xl:h-16 bg-stone-100"
+                      className="h-10 md:h-14 xl:h-16 bg-stone-100 rounded-full"
                     />
                   </FormControl>
 
@@ -145,14 +145,14 @@ const Contact = () => {
             <div className="w-full flex justify-center">
               <Button
                 type="submit"
-                className="w-full h-10 xl:h-14 sm:w-[80%] xl:w-[60%] bg-blue-500 cursor-pointer text-white"
+                className="w-full h-10 xl:h-14 sm:w-[80%] xl:w-[60%] bg-linear-to-br from-orange-500 to-blue-400 cursor-pointer text-black hover:bg-black hover:text-white rounded-full"
               >
                 {isSubmitting ? <Loader /> : "Submit"}
               </Button>
             </div>
           </form>
         </Form>
-        )
+        
       </div>
     </div>
   );
