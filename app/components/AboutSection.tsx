@@ -57,7 +57,7 @@ const AboutSection = () => {
       <div className="flex flex-col lg:flex-row">
         <div className=" w-full h-[550px] lg:w-[50%] flex justify-center items-center p-10">
           <p id="quote" className=" text-white md:text-[30px] 2xl:text-[40px]">
-             I&apos;m a frontend engineer immersed in the JavaScript universe. There are, of course, several great JavaScript libraries and frameworks: Svelte, Astro, Vue, just to name a few, but I am particularly fond of React. I&apos;ve built some fun things with React, including a &quot;phenomenal&quot; podcast app I built with Next.js. Check it out below. I&apos;m also passionate about quality technical and education content in the community. If you come across something you think I should know about, please feel free to share below. 
+             I&apos;m a frontend engineer immersed in the JavaScript universe. There are, of course, several great JavaScript libraries and frameworks: Svelte, Astro, Vue, just to name a few, but I am particularly fond of React. I&apos;ve built some fun things with React, including a &quot;phenomenal&quot; podcast app I built with Next.js. Check it out below. I&apos;m also passionate about quality technical and educational content in the community. If you come across something you think I should know about, please feel free to share below. 
           </p>
         </div>
         <div
