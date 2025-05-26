@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { lato } from "./fonts";
 import "./globals.css";
 import { Toaster } from '@/_components/ui/sonner';
-
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -24,6 +24,7 @@ export default function RootLayout({
       >
         {children}
         <Toaster richColors />
+        <Analytics />
       </body>
     </html>
   );
