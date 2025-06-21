@@ -20,26 +20,28 @@ const AboutSection = () => {
         trigger: text.chars,
         start: 'top 80%',
         end: 'top 20%',
+        scrub: true,
         once: true,
         markers: false,
       },
       opacity: 0,
       scaleY: 0,
-      y: -20,
-      transformOrigin: 'top',
-      duration: 1,
+      y: -10,
+      // transformOrigin: 'top',
+      duration: 0.4,
       stagger: 0.2,
-      
     })
     .from('#image', {
       scrollTrigger: {
         trigger: '#image',
         start: 'top 80%',
         end: 'top 20%',
+        scrub: true,
         once: true,
         markers: false
       },
       opacity: 0,
+      duration: 0.4,
       y: 100
     })
     
@@ -54,15 +56,14 @@ const AboutSection = () => {
         <h1>About Me</h1>
       </div>
       <div className="flex flex-col lg:flex-row">
-        <div className=" w-full h-[550px] lg:w-[50%] flex justify-center items-center p-10">
-          <p id="quote" className=" text-white md:text-[30px] 2xl:text-[40px]">
+        <div className=" w-full h-[550px] lg:w-[50%] flex justify-center items-center p-5">
+          <p id="quote" className=" text-white text-2xl md:text-3xl lg:text-4xl text-wrap">
             I&apos;m a frontend engineer immersed in the JavaScript ecosystem.
             Over the past few years, I&apos;ve leveraged Next.js optimization
             features to spin up fully responsive and accessible applications,
             including a fullstack podcast app. Check it out below. I&apos;m also
             passionate about discovering quality technical and
-            educational content in the community. If you come across something
-            you think I should know about, please feel free to share below.
+            educational content in the tech community.
           </p>
         </div>
         <div
