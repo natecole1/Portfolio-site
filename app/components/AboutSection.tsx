@@ -20,7 +20,7 @@ const AboutSection = () => {
         trigger: text.chars,
         start: 'top 80%',
         end: 'top 20%',
-        scrub: true,
+        once: true,
         markers: false,
       },
       opacity: 0,
@@ -60,7 +60,7 @@ const AboutSection = () => {
             Over the last few years, I&apos;ve leveraged Next.js optimization
             features to spin up fully responsive and accessible applications,
             including a fullstack podcast app. Check it out below. I&apos;m also
-            passionate about discovering and learning from quality technical and
+            passionate about discovering, and learning from, quality technical and
             educational content in the community. If you come across something
             you think I should know about, please feel free to share below.
           </p>
