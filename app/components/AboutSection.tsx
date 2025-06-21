@@ -57,10 +57,10 @@ const AboutSection = () => {
         <div className=" w-full h-[550px] lg:w-[50%] flex justify-center items-center p-10">
           <p id="quote" className=" text-white md:text-[30px] 2xl:text-[40px]">
             I&apos;m a frontend engineer immersed in the JavaScript ecosystem.
-            Over the last few years, I&apos;ve leveraged Next.js optimization
+            Over the past few years, I&apos;ve leveraged Next.js optimization
             features to spin up fully responsive and accessible applications,
             including a fullstack podcast app. Check it out below. I&apos;m also
-            passionate about discovering, and learning from, quality technical and
+            passionate about discovering quality technical and
             educational content in the community. If you come across something
             you think I should know about, please feel free to share below.
           </p>
