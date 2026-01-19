@@ -49,12 +49,20 @@ export const techStackIcons = [
 
 export const projects = [
   {
-    imageUrl: "/assets/podcastingApp.png",
+    imageUrl: "/assets/podcasting-desktop.png",
+    imageUrlMobile: "/assets/podcasting-mobile.png",
     projectTitle: "PODCASTING",
     projectWebLink: "https://podcastingai.vercel.app",
   },
   {
-    imageUrl: "/assets/cambridgeIvyInn.png",
+    imageUrl: "/assets/sheafify-desktop.png",
+    imageUrlMobile: "/assets/sheafify-mobile.png",
+    projectTitle: "Sheafify",
+    projectWebLink: "https://sheafify-restaurant-landing-page.vercel.app/",
+  },
+  {
+    imageUrl: "/assets/cambridge-desktop.png",
+    imageUrlMobile: "/assets/cambridge-mobile.png",
     projectTitle: "Cambridge Ivy Inn",
     projectWebLink: "https://cambridge-ivy-inn.vercel.app",
   },

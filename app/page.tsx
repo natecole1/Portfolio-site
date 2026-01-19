@@ -6,8 +6,6 @@ import VideoBackground from "./components/VideoBackground";
 import ProjectSection from "./components/ProjectSection";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import TechStackGallery from "./components/TechStackGallery";
-import Nav from "./components/Nav";
 
 
 export default function Home() {
@@ -16,13 +14,11 @@ export default function Home() {
     <>
       <div className="relative">
         <VideoBackground />  
-        <Nav />
         <Hero/>
       </div>
       <div>
         <AboutSection />
         <ProjectSection />
-        <TechStackGallery />
         <Contact />
         <Footer />
       </div>

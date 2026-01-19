@@ -11,7 +11,7 @@ const Footer = () => {
   }, [year]);
 
   return (
-    <div className="w-full h-15 xl:h-20 flex justify-center items-end p-4 bg-[#09090b]/[0.9]">
+    <div className="w-full h-15 xl:h-20 flex justify-center items-end p-4 mt-4">
       <p className="text-white text-xs text-center">
         Copyright © {currentYear}. All rights reserved.
       </p>

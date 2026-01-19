@@ -76,16 +76,13 @@ const Contact = () => {
     }
 
   return (
-    <div id="contact" className="w-full bg-[#09090b]/[0.9] p-4">
-      <div>
-        <div className="w-30 md:w-40 flex items-center justify-center p-4 border-2 rounded-full text-white">
-          <h1 className=" ">Contact</h1>
-        </div>
-        <div className="w-full flex items-center justify-center my-10 xl:my-20">
-          <h1 className="text-white text-[20px]">Let&apos;s Connect</h1>
-        </div>
+    <div id="contact" className="w-full md:w-4/5 lg:max-w-[700px] m-auto">
+      <div className="w-full flex items-center justify-center my-10 xl:my-20">
+        <h1 className="text-[#edd76b] text-[20px] md:text-[25px] lg:text-[40px] 2xl:text-[50px] uppercase">
+          Let&apos;s Connect
+        </h1>
       </div>
-      <div className="m-auto w-[80%] md:w-[60%] 2xl:w-[50%]">
+      <div className="m-auto w-4/5 md:w-full">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
             <FormField
@@ -93,16 +90,18 @@ const Contact = () => {
               name="username"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-white">Your Name</FormLabel>
+                  <FormLabel className="text-white xl:text-[30px] py-2 md:py-6">
+                    Full Name
+                  </FormLabel>
                   <FormControl>
                     <Input
                       placeholder="Enter your name"
                       {...field}
-                      className="h-10 md:h-14 xl:h-16 bg-stone-100 rounded-full"
+                      className="h-10 md:h-14 xl:h-16 pl-4 md:pl-6 bg-stone-100 rounded-full"
                     />
                   </FormControl>
 
-                  <FormMessage />
+                  <FormMessage className="text-red-400 md:text-xl mt-2" />
                 </FormItem>
               )}
             />
@@ -110,17 +109,19 @@ const Contact = () => {
               control={form.control}
               name="useremail"
               render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-white">Your Email</FormLabel>
+                <FormItem className="mt-3 lg:mt-6">
+                  <FormLabel className="text-white xl:text-[30px] py-2 md:py-6">
+                    Email
+                  </FormLabel>
                   <FormControl>
                     <Input
                       placeholder="Enter your email"
                       {...field}
-                      className="h-10 md:h-14 xl:h-16 bg-stone-100 rounded-full"
+                      className="h-10 md:h-14 xl:h-16 pl-4 md:pl-6 bg-stone-100 rounded-full"
                     />
                   </FormControl>
 
-                  <FormMessage />
+                  <FormMessage className="text-red-400 md:text-xl mt-2" />
                 </FormItem>
               )}
             />
@@ -128,31 +129,32 @@ const Contact = () => {
               control={form.control}
               name="usermessage"
               render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-white">Message</FormLabel>
+                <FormItem className="mt-3 lg:mt-6">
+                  <FormLabel className="text-white py-2 md:py-6 xl:text-[30px]">
+                    Message
+                  </FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="Enter your message"
                       {...field}
-                      className="bg-stone-100 h-24 lg:h-32"
+                      className="bg-stone-100 h-24 pl-4 md:pl-6 lg:h-32 rounded-lg"
                     />
                   </FormControl>
 
-                  <FormMessage />
+                  <FormMessage className="text-red-400 md:text-xl mt-2" />
                 </FormItem>
               )}
             />
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center my-6 md:my-8 lg:my-10">
               <Button
                 type="submit"
-                className="w-full h-10 xl:h-14 sm:w-[80%] xl:w-[60%] bg-linear-to-br from-orange-500 to-blue-400 cursor-pointer text-black hover:bg-black hover:text-white rounded-full"
+                className="w-full p-2 md:p-3 lg:p-6 xl:h-14 sm:w-[80%] xl:w-[60%] bg-gradient-to-r from-red-300 to-yellow-200  cursor-pointer text-black hover:bg-black hover:text-white rounded-full text-[20px] md:text-[25px] lg:text-[30px] font-semibold flex items-center justify-center"
               >
                 {isSubmitting ? <Loader /> : "Submit"}
               </Button>
             </div>
           </form>
         </Form>
-        
       </div>
     </div>
   );

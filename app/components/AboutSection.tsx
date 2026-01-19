@@ -1,83 +1,63 @@
-'use client'
-import React, {useEffect} from 'react';
-import Image from 'next/image';
-import gsap from 'gsap';
 
-import { ScrollTrigger } from 'gsap/all';
-
-import  SplitType  from 'split-type'
+import React from 'react';
+import Typewriter from 'typewriter-effect';
 
 
 const AboutSection = () => {
-  gsap.registerPlugin(ScrollTrigger)
-  
-  useEffect(() => {
-   const text = new SplitType("#quote");
-
-    const t1 = gsap.timeline();
-    t1.from(text.chars, {
-      scrollTrigger: {
-        trigger: text.chars,
-        start: 'top 80%',
-        end: 'top 20%',
-        scrub: true,
-        once: true,
-        markers: false,
-      },
-      opacity: 0,
-      scaleY: 0,
-      y: -10,
-      // transformOrigin: 'top',
-      duration: 0.4,
-      stagger: 0.2,
-    })
-    .from('#image', {
-      scrollTrigger: {
-        trigger: '#image',
-        start: 'top 80%',
-        end: 'top 20%',
-        scrub: true,
-        once: true,
-        markers: false
-      },
-      opacity: 0,
-      duration: 0.4,
-      y: 100
-    })
+ 
     
-  }, [])
-
   return (
-    <div
-      id="about"
-      className="w-full z-50 bg-[#09090b]/[0.9] flex flex-col  p-4 xl:py-20"
-    >
-      <div className="w-30 md:w-40 flex items-center justify-center p-4 border-2 rounded-full text-white">
-        <h1>About Me</h1>
-      </div>
-      <div className="flex flex-col lg:flex-row">
-        <div className=" w-full h-[550px] lg:w-[50%] flex justify-center items-center p-5">
-          <p id="quote" className=" text-white text-2xl md:text-3xl lg:text-4xl text-wrap">
-            I&apos;m a frontend engineer immersed in the JavaScript ecosystem.
-            Over the past few years, I&apos;ve leveraged Next.js optimization
-            features to spin up fully responsive and accessible applications,
-            including a fullstack podcast app. Check it out below. I&apos;m also
-            passionate about discovering quality technical and
-            educational content in the tech community.
-          </p>
-        </div>
-        <div
-          id="image"
-          className="w-full lg:w-[50%] mb-10 flex justify-center items-center"
-        >
-          <Image
-            src={"/assets/javascriptCode.png"}
-            alt="Javascript Code Snippet"
-            width={300}
-            height={500}
-            className="rounded-lg w-60 h-68 md:w-[300px] md:h-[400px]"
-          />
-        </div>
+    <div className="w-full grid grid-cols-1 ">
+      <div className=" w-full md:w-4/5 xl:w-3/5 h-[150lvh] md:h-lvh lg:h-[150lvh] 2xl:h-[110lvh] text-white px-8 m-auto my-6">
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .pauseFor(3000)
+              .typeString(" <h1>A Bit About Me</h1>")
+              .typeString(
+                ' <p className="mb-4">I am an endlessly curious developer with a knack for creative application of new technologies to web development. My journey in tech began with a curiosity for how the web worked, leading me to explore JavaScript and some of its frameworks.</p>',
+              )
+              .typeString(
+                '<p className="mb-4">Over the years, I&apos;ve honed my skills in front-end development, and kept abreast of the latest technologies. I thrive in a collaborative environment where I can contribute to innovative projects and solve complex problems.</p>',
+              )
+              .typeString(
+                " <p>When I&apos;m not coding, you can find me listening to podcasts of various genres, or indulging in my love for cooking and sports.</p>",
+              )
+              .typeString("<h1>Expertise</h1>")
+              .typeString(
+                "<ul> \n \
+                      <li>\n \
+                        Proficiency in TypeScript, Next.js, and Tailwind \n \
+                      </li>\n \
+                      <li> \n \
+                        Experience with AI/ML integration using Langchain and Langgraph frameworks \n \
+                      </li> \n \
+                      <li> \n \
+                        Skilled at prototyping and iteration of AI agentic workflows \n \
+                      </li> \n \
+                      <li> \n \
+                        Deep knowledge of responsive web design and UI/UX principles \n \
+                      </li>\n \
+                      <li>\n \
+                        Familiarity with backend technologies and databases \n \
+                      </li>\n \
+                      <li>\n \
+                        Strong technical problem-solving and analytical skills \n \
+                      </li>\n \
+                      <li>\n \
+                        Ability to communicate complex technical materials to both technical and non-technical audience\n \
+                      </li>\n \
+                    </ul> \n \
+                  ",
+              )
+              .start();
+          }}
+          options={{
+            wrapperClassName: "typewriter-text",
+            cursorClassName: "typewriter-cursor",
+            delay: 5,
+          }}
+        />
       </div>
     </div>
   );
