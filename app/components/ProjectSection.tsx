@@ -26,7 +26,7 @@ const ProjectSection = () => {
           </h1>
         </div>
       </div>
-      <div className="w-full flex flex-col my-20 lg:my-32">
+      <div className="w-full flex flex-col">
         <Swiper
           effect="coverflow"
           grabCursor={true}

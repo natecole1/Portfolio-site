@@ -8,7 +8,7 @@ const AboutSection = () => {
     
   return (
     <div className="w-full grid grid-cols-1 ">
-      <div className=" w-full md:w-4/5 xl:w-3/5 h-[150lvh] md:h-lvh lg:h-[150lvh] 2xl:h-[110lvh] text-white px-8 m-auto my-6">
+      <div className=" w-full md:w-4/5 xl:w-3/5 h-[150lvh] md:h-[130lvh] lg:h-[150lvh] 2xl:h-[110lvh] text-white px-8 m-auto my-6">
         <Typewriter
           onInit={(typewriter) => {
             typewriter
