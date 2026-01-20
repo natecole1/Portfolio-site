@@ -31,7 +31,7 @@ const ProjectCard = ({imageUrl, imageUrlMobile, projectTitle, projectWebLink}: P
             />
           </Picture>
           <div className="w-full h-full flex flex-col items-center justify-center absolute inset-o bg-black/[0.8] opacity-0 hover:opacity-100 transition-all duration-400 cursor-pointer rounded-xl">
-            <h2 className="text-[#edd76b] md:text-[30px] font-bold">
+            <h2 className="text-[#edd76b] md:text-[30px] font-bold uppercase">
               {projectTitle}
             </h2>
             <p className="text-white text-[18px] md:text-[25px]">website</p>
