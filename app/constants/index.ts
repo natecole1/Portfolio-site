@@ -66,4 +66,10 @@ export const projects = [
     projectTitle: "Cambridge Ivy Inn",
     projectWebLink: "https://cambridge-ivy-inn.vercel.app",
   },
+  {
+    imageUrl: "/assets/space-tourism-desktop.png",
+    imageUrlMobile: "/assets/space-tourism-mobile.png",
+    projectTitle: "Space Tourism",
+    projectWebLink: "https://space-tourism-app-rose.vercel.app",
+  }
 ];

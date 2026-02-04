@@ -12,7 +12,7 @@ const AboutSection = () => {
         <Typewriter
           onInit={(typewriter) => {
             typewriter
-              .pauseFor(3000)
+              .pauseFor(4000)
               .typeString(" <h1>A Bit About Me</h1>")
               .typeString(
                 ' <p className="mb-4">I am an endlessly curious developer with a knack for creative application of new technologies to web development. My journey in tech began with a curiosity for how the web worked, leading me to explore JavaScript and some of its frameworks.</p>',
