@@ -14,34 +14,6 @@ import 'swiper/css/navigation';
 
 const ProjectSection = () => {
 
-/*
-<Swiper
-            effect={"coverflow"}
-            grabCursor={true}
-            loop={true}
-            centeredSlides={true}
-            slidesPerView={2}
-            autoHeight={true}
-            breakpoints={{
-              480: {
-                slidesPerView: 3,
-              },
-            }}
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 2.5,
-              slideShadows: false,
-            }}
-            navigation
-            pagination={{ clickable: true }}
-            modules={[EffectCoverflow, Navigation]}
-            className="max-w-[300px] md:max-w-lg xl:max-w-xl overflow-hidden"
-
-          > 
-
-*/
 
   return (
     <div
