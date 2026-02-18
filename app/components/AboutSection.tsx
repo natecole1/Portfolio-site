@@ -15,7 +15,7 @@ const AboutSection = () => {
               .pauseFor(4000)
               .typeString(" <h1>A Bit About Me</h1>")
               .typeString(
-                ' <p className="mb-4">I am an endlessly curious developer with a knack for creative application of new technologies to web development. My journey in tech began with a curiosity for how the web worked, leading me to explore JavaScript and some of its frameworks.</p>',
+                ' <p className="mb-4">I am an endlessly curious software engineer with a knack for creative application of new technologies to web development. My journey in tech began with a curiosity for how the web worked, leading me to explore JavaScript and some of its frameworks.</p>',
               )
               .typeString(
                 '<p className="mb-4">Over the years, I&apos;ve honed my skills in front-end development, and kept abreast of the latest technologies. I thrive in a collaborative environment where I can contribute to innovative projects and solve complex problems.</p>',

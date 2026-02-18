@@ -148,7 +148,7 @@ const Contact = () => {
             <div className="w-full flex justify-center my-6 md:my-8 lg:my-10">
               <Button
                 type="submit"
-                className="w-full p-2 md:p-3 lg:p-6 xl:h-14 sm:w-[80%] xl:w-[60%] bg-gradient-to-r from-red-300 to-yellow-200  cursor-pointer text-black hover:bg-black hover:text-white rounded-full text-[20px] md:text-[25px] lg:text-[30px] font-semibold flex items-center justify-center"
+                className="w-full p-2 md:p-3 xl:p-6 xl:h-14 sm:w-[80%] xl:w-[60%] bg-gradient-to-r from-red-300 to-yellow-200  cursor-pointer text-black hover:bg-black hover:text-white rounded-full text-[20px] md:text-[25px] lg:text-[30px] font-semibold flex items-center justify-center"
               >
                 {isSubmitting ? <Loader /> : "Submit"}
               </Button>
